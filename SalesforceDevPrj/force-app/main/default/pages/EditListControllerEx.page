@@ -1,0 +1,23 @@
+<apex:page standardController="Opportunity" recordSetVar="Opps">
+<apex:form >
+<apex:pageblock Title="Editing Opportunities in List">
+
+<apex:pageblockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+</apex:pageblockButtons>
+
+<apex:pageBlockTable value="{!Opps}" var="eachOpps">
+<apex:column value="{!eachOpps.Name}"/>
+
+<apex:column headerValue="Staging">
+<apex:inputField value="{!eachOpps.StageName}"/>
+</apex:column>
+
+<apex:column headerValue="Amount">
+<apex:inputField value="{!eachOpps.Amount}"/>
+</apex:column>
+</apex:pageBlockTable>
+
+</apex:pageblock>
+</apex:form>
+</apex:page>

@@ -1,0 +1,14 @@
+<apex:page controller="MyCustomController">
+<apex:form >
+<apex:pageBlock title="My content">
+<h1>Congrations for the Login: <apex:outputLabel value="{!$User.FirstName}"/></h1>
+<apex:pageblockButtons >
+<apex:commandButton action="{!SaveRecord}" value="Save Record" />
+</apex:pageblockButtons>
+
+Opportunity Name: <apex:inputfield value="{!Opportunity.Name}"/>
+Stage Name      :<apex:inputfield value="{!Opportunity.StageName}"/>
+Stage Name      :<apex:inputfield value="{!Opportunity.Amount}"/>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

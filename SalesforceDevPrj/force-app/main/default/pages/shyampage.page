@@ -1,0 +1,32 @@
+<apex:page >
+<apex:form >
+<apex:pageMessage strength="2" severity="info"  summary="Mandatory fields to be provided"></apex:pageMessage>
+<apex:pageBlock title="Shyam Block">
+<apex:pageBlockSection title="Fruits">
+<apex:pageBlockSectionItem > Apple</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem > Oranges</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem > Grapes</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Companies">
+<apex:pageBlockSectionItem > Lenova</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem > DELL</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem > Microsoft</apex:pageBlockSectionItem> <br/><br/><br/>
+<apex:panelBar >
+<apex:panelBarItem label="Item1">Hello how are you</apex:panelBarItem>
+<apex:panelBarItem label="Item2">Greater India</apex:panelBarItem>
+<apex:panelBarItem label="Item3">Superb</apex:panelBarItem>
+</apex:panelBar>
+<apex:tabPanel >
+<apex:tab name="Home" label="Home" switchType="ajax">Home Page</apex:tab>
+<apex:tab name="Sales" label="Sales" switchType="ajax">SalesPage</apex:tab>
+</apex:tabPanel>
+</apex:pageBlockSection>
+
+<apex:pageBlockButtons location="Both">
+<apex:commandButton value="Save"/>
+<apex:commandButton value="Cancel"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

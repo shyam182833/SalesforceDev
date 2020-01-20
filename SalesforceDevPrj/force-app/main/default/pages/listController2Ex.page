@@ -1,0 +1,10 @@
+<apex:page standardController="Opportunity" recordSetVar="opps">
+<apex:form >
+<apex:selectList value="{!filterid}" size="1">
+<apex:selectOptions value="{!listviewoptions}">
+</apex:selectOptions>
+</apex:selectList> 
+<apex:commandButton value="GO !" action="{!list}"/>
+
+</apex:form>>
+</apex:page>
